@@ -1,0 +1,117 @@
+﻿{
+	"educations": [
+		{
+			"Scenario": "Valid Entry 1",
+			"University": "ABk Uni",
+			"Country": "New Zealand",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Valid Entry 2",
+			"University": "XYo Uni",
+			"Country": "Philippines",
+			"Title": "BArch",
+			"Degree": "Master",
+			"Year": "2023"
+		},
+		{
+			"Scenario": "Empty All Fields",
+			"University": "",
+			"Country": "",
+			"Title": "",
+			"Degree": "",
+			"Year": ""
+		},
+		{
+			"Scenario": "Empty University",
+			"University": "",
+			"Country": "New Zealand",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Empty Country",
+			"University": "ABC Uni",
+			"Country": "",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Empty Title",
+			"University": "ABC Uni",
+			"Country": "India",
+			"Title": "",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Empty Degree",
+			"University": "ABC Uni",
+			"Country": "Australia",
+			"Title": "B.Sc",
+			"Degree": "",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Empty Year",
+			"University": "ABC Uni",
+			"Country": "USA",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": ""
+		},
+		{
+			"Scenario": "SQL Injection in University",
+			"University": "ABK'; DROP TABLE Students;--",
+			"Country": "New Zealand",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "JavaScript Injection",
+			"University": "<script>alert('hack')</script>",
+			"Country": "India",
+			"Title": "M.B.A",
+			"Degree": "Master",
+			"Year": "2022"
+		},
+		{
+			"Scenario": "Long University Name",
+			"University": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+			"Country": "India",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Long Degree Name",
+			"University": "Long Degree Uni",
+			"Country": "USA",
+			"Title": "M.B.A",
+			"Degree": "VeryLongDegreeName_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+			"Year": "2021"
+		},
+		{
+			"Scenario": "Duplicate Record 1",
+			"University": "Duplicate Uni",
+			"Country": "Australia",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2019"
+		},
+		{
+			"Scenario": "Duplicate Record 2",
+			"University": "Duplicate Uni",
+			"Country": "Australia",
+			"Title": "B.Sc",
+			"Degree": "Bachelor",
+			"Year": "2019"
+		}
+	]
+}
+

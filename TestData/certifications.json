@@ -1,0 +1,94 @@
+{
+  "certifications": [
+    {
+      "Scenario": "Valid Entry 1",
+      "CertificateOrAward": "Azure DevOps Engineer",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2024"
+    },
+    {
+      "Scenario": "Valid Entry 2",
+      "CertificateOrAward": "AZURE DEVOPS ENGINEER",
+      "CertifiedFrom": "MICROSOFT",
+      "Year": "2024"
+    },
+    {
+      "Scenario": "Missing All Fields",
+      "CertificateOrAward": "",
+      "CertifiedFrom": "",
+      "Year": "",
+      "ExpectedMessage": "Please enter all required fields"
+    },
+    {
+      "Scenario": "Missing Certificate",
+      "CertificateOrAward": "",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2024",
+      "ExpectedMessage": "Please enter all required fields"
+    },
+    {
+      "Scenario": "Missing CertifiedFrom",
+      "CertificateOrAward": "Azure DevOps Engineer",
+      "CertifiedFrom": "",
+      "Year": "2024",
+      "ExpectedMessage": "Please enter all required fields"
+    },
+    {
+      "Scenario": "Missing Year",
+      "CertificateOrAward": "Azure DevOps Engineer",
+      "CertifiedFrom": "Microsoft",
+      "Year": "",
+      "ExpectedMessage": "Please enter all required fields"
+    },
+    {
+      "Scenario": "SQL Injection Certificate",
+      "CertificateOrAward": "Azure'; DROP TABLE Certification;--",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    },
+    {
+      "Scenario": "SQL Injection CertifiedFrom",
+      "CertificateOrAward": "Azure DevOps Engineer",
+      "CertifiedFrom": "'DROP TABLE Certification;--",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    },
+    {
+      "Scenario": "JavaScript Injection Certificate",
+      "CertificateOrAward": "<script>alert('XSS')</script>",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    },
+    {
+      "Scenario": "Long Certificate Name (150 chars)",
+      "CertificateOrAward": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    },
+    {
+      "Scenario": "Long CertifiedFrom (150 chars)",
+      "CertificateOrAward": "Azure DevOps Engineer",
+      "CertifiedFrom": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    },
+    {
+      "Scenario": "Edit Certification",
+      "OldCertificateOrAward": "Azure DevOps Engineer",
+      "CertificateOrAward": "Azure Solutions Architect",
+      "CertifiedFrom": "Microsoft",
+      "Year": "2025"
+    },
+    {
+      "Scenario": "Duplicate Record",
+      "CertificateOrAward": "AZURE DEVOPS ENGINEER",
+      "CertifiedFrom": "MICROSOFT",
+      "Year": "2024",
+      "ExpectedMessage": ""
+    }
+  ]
+}
+
