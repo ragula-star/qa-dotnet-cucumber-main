@@ -24,7 +24,7 @@ namespace qa_dotnet_cucumber.Tests
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
-            
+
             allEducations = JsonReader.ReadData<EducationModel>("TestData/education.json", "educations");
         }
 
@@ -206,16 +206,16 @@ namespace qa_dotnet_cucumber.Tests
 
             try
             {
-                   educationPage.EditEducation(
-                    university: "Test University",
-                    newUniversity: "Updated University",
-                    newCountry: "Canada",
-                    newTitle: "PHD",
-                    newDegree: "Software Engineering",
-                    newYear: "2024"
-                );
+                educationPage.EditEducation(
+                 university: "Test University",
+                 newUniversity: "Updated University",
+                 newCountry: "Canada",
+                 newTitle: "PHD",
+                 newDegree: "Software Engineering",
+                 newYear: "2024"
+             );
 
-                
+
                 string toastMessage = educationPage.GetToastMessage();
                 Assert.That(toastMessage, Does.Contain("updated successfully"));
                 test.Pass($"Education updated successfully: {toastMessage}");
@@ -227,7 +227,7 @@ namespace qa_dotnet_cucumber.Tests
             }
         }
 
-       [TearDown]
+        [TearDown]
         public void TearDown()
         {
             try

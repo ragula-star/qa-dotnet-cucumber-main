@@ -15,19 +15,19 @@ namespace qa_dotnet_cucumber.Utilities
 		{
 			if (_extent == null)
 			{
-				
+
 				string reportsDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports");
 				Directory.CreateDirectory(reportsDir);
 				string reportPath = Path.Combine(reportsDir, "AutomationReport.html");
 
 				var sparkReporter = new ExtentSparkReporter(reportPath);
 				_extent = new ExtentReports();
-				_extent.AttachReporter(sparkReporter); 
+				_extent.AttachReporter(sparkReporter);
 			}
 			return _extent;
 		}
 
-		public static ExtentTest CreateTest(string testName) 
+		public static ExtentTest CreateTest(string testName)
 		{
 			_test = GetReporter().CreateTest(testName);
 			return _test;

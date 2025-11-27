@@ -2,14 +2,14 @@
 {
     public class CertificationModel
     {
-        public string? Scenario { get; set; }                  
-        public string? CertificateOrAward { get; set; }        
-        public string? CertifiedFrom { get; set; }            
-        public string? Year { get; set; }                     
+        public string? Scenario { get; set; }
+        public string? CertificateOrAward { get; set; }
+        public string? CertifiedFrom { get; set; }
+        public string? Year { get; set; }
 
-       
+
         public string? OldCertificateOrAward { get; set; }
-        public string? ExpectedMessage { get; set; }          
+        public string? ExpectedMessage { get; set; }
     }
 
     public class CertificationRoot
