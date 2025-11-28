@@ -33,6 +33,7 @@ namespace qa_dotnet_cucumber.Utilities
 			return _test;
 		}
 
+
 		public static void LogPass(string message)
 		{
 			_test?.Pass(message);

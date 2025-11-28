@@ -104,6 +104,7 @@
 			"Degree": "Bachelor",
 			"Year": "2019"
 		},
+
 		{
 			"Scenario": "Duplicate Record 2",
 			"University": "Duplicate Uni",

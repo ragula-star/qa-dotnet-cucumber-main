@@ -68,6 +68,7 @@ namespace qa_dotnet_cucumber.Pages
             return _wait.Until(d => d.FindElement(PasswordErrorAlert)).Text;
         }
 
+       
         public string GetSuccessMessage()
         {
             return _wait.Until(d => d.FindElement(SuccessMessage)).Text;

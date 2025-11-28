@@ -11,6 +11,7 @@ namespace qa_dotnet_cucumber.Pages
             _driver = driver;
         }
 
+       
         public void GoToEducationPage()
         {
             _driver.Navigate().GoToUrl("http://localhost:5003/Home/Education");
