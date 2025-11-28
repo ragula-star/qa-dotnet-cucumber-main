@@ -2,6 +2,7 @@
 {
     public class EducationModel
     {
+
         public string? University { get; set; }
         public string? Country { get; set; }
         public string? Title { get; set; }

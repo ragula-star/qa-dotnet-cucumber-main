@@ -232,6 +232,7 @@ namespace qa_dotnet_cucumber.Pages
             return entries;
         }
 
+       
         public void ResetAndAddEducation(List<(string university, string countryCollege, string title, string degree, string year)> education)
         {
             GoToEducationtab();

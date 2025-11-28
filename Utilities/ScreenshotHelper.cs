@@ -4,6 +4,7 @@ using System.IO;
 using System;
 using System.IO;
 
+
 namespace qa_dotnet_cucumber.Utilities
 {
     public static class ScreenshotHelper
